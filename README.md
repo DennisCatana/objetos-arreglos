@@ -1,9 +1,9 @@
 # objetos-arreglos
 **Objetos**
- Conjelar Objetos
+ Conjelar Objetos <br>
 ![image](https://github.com/DennisCatana/objetos-arreglos/assets/139184732/a09af91c-9654-498e-bd03-1f78b707069c)
 
-Copiar dos objetos
+Copiar dos objetos <br>
 ![image](https://github.com/DennisCatana/objetos-arreglos/assets/139184732/62604bef-ee85-4ea2-8820-4937f54655f2)
 
 
