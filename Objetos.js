@@ -1,3 +1,42 @@
+//Fundamentos
+const cliente = { //Creamos el objeto
+    name:"Jhordy",
+    lastName:"Aguas",
+    id:"1790909090",
+    address:{
+        city:"Quito",
+        telephone:"0912345678",
+        street:"Madrid"
+    },
+    librosSolicitados:['Don Quijote de la Mancha','El Señor de los Anillos','Harry Potter','El Principito'],
+    enviarEmailDeLibrosSolicitados (){
+        return `Usted a solicitado los siguientes libros: ${this.librosSolicitados.join(', ')}`
+    },
+    state:true
+}
+
+console.log(cliente.id); 
+console.log(cliente.enviarEmailDeLibrosSolicitados());
+
+cliente.foto ="img/foto" 
+delete cliente.state 
+console.log(cliente);
+
+//Destructuración de objetos
+
+// const {name,lastName,id,address} = cliente
+// console.log(`El ciudadano ${id} que ha solicitado los libros vive en ${address.city}`);
+
+// const {name,lastName,id,myAddress=cliente.address} = cliente
+// console.log(`El ciudadano ${id} que ha solicitado los libros vive en ${myAddress.city}`);
+
+// const {name,lastName,id,address:{city}} = cliente
+// console.log(`El ciudadano ${id} que ha solicitado los libros vive en ${city}`);
+
+const {name,lastName,...res} = cliente
+console.log(`El ciudadano ${res.id} que ha solicitado los libros vive en ${res.address.city}`);
+
+
 //Uso de This en objetos
 
 
