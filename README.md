@@ -12,6 +12,15 @@ Destructuración de objetos
 
 
 **Arrays**
+*METODOS*
+![WhatsApp Image 2023-11-20 at 22 54 19](https://github.com/DennisCatana/objetos-arreglos/assets/117743538/1c77512a-7504-4b76-b2ce-10a84515e5a7)
+
+*DESTRUCTURACION*
+![WhatsApp Image 2023-11-20 at 22 54 19 (1)](https://github.com/DennisCatana/objetos-arreglos/assets/117743538/b6c914d2-d7b8-4cc5-b528-75c3ae5aab1d)
+
+*REST Y SPREAD*
+![WhatsApp Image 2023-11-20 at 22 54 19 (2)](https://github.com/DennisCatana/objetos-arreglos/assets/117743538/61b27b7f-f043-4b71-8944-39f404c05f1c)
+
 
 # Arrays (Capruras de la funcionalidad de los fundamentos, de un reccorrido y aplicando el método)
 
