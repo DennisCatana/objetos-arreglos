@@ -66,3 +66,67 @@ const newProduct = {
 
 console.log(newProduct);
 
+
+//-------------------------------------------------------------------------------
+// Congelar Objetos
+'use strict';
+
+// Definir un objeto para el carrito de compras
+const cart = {
+  items: [],
+  total: 0
+};
+
+// Agregar un ítem al carrito
+function addItem(item) {
+  // Congelar el objeto del ítem para evitar modificaciones no deseadas
+  Object.freeze(item);
+  
+  // Agregar el ítem al carrito
+  cart.items.push(item);
+  
+  // Actualizar el total del carrito
+  cart.total += item.price;
+}
+
+// Ejemplo de uso
+const item1 = {
+  name: "Camisa - David Lascano",
+  price: 25.99,
+  color: "Azul",
+  size: "M"
+};
+
+addItem(item1);
+
+console.log(cart);
+//------------------------------------------------------------------------------------
+
+
+//COPIAR DOS OBJETOS
+
+'use strict';
+
+// Definir un objeto para la lista de tareas
+const taskList = {
+  tasks: [],
+  addTask(task) {
+    this.tasks.push(task);
+  },
+  completeTask(taskIndex) {
+    this.tasks[taskIndex].completed = true;
+  }
+};
+
+// Definir un objeto para la tarea individual
+const task = {
+  description: "Hacer ejercicio",
+  priority: "Alta",
+  completed: false
+};
+
+// Agregar la tarea a la lista de tareas utilizando el operador de propagación
+taskList.addTask({ ...task });
+
+console.log(taskList);
+
